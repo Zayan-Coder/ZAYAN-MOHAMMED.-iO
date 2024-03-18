@@ -5,6 +5,55 @@
   <source src="Bg music.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
   </audio>
+
+   <style>
+        /* Style for the help option */
+        #help {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #ff0000;
+            padding: 5px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style for the text box */
+        #helpText {
+            display: none;
+            position: absolute;
+            top: 30px;
+            right: -5px;
+            width: 200px;
+            padding: 10px;
+            background-color: #FFFF00;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="help">Help
+        <div id="helpText">
+             THE APP MAY STUCK SOMETIMES. IN THIS CASE CLOSE THE APP AND TRY AGAIN IN 1 OR 2 MINUTES 
+            <br>
+            
+        </div>
+    </div>
+
+    <!-- Your website content goes here -->
+
+    <script>
+        // JavaScript to toggle the visibility of the text box
+        var helpButton = document.getElementById("help");
+        var helpText = document.getElementById("helpText");
+
+        helpButton.addEventListener("click", function() {
+            helpText.style.display = (helpText.style.display === "block") ? "none" : "block";
+        });
+    </script
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
