@@ -11,8 +11,9 @@
         #help {
             position: fixed;
             top: 10px;
-            right: 10px;
-            background-color: #ff0000;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ffffff;
             padding: 5px;
             border: 1px solid #cccccc;
             border-radius: 5px;
@@ -24,10 +25,11 @@
             display: none;
             position: absolute;
             top: 30px;
-            right: -5px;
+            left: 50%;
+            transform: translateX(-50%);
             width: 200px;
             padding: 10px;
-            background-color: #FFFF00;
+            background-color: #ffffff;
             border: 1px solid #cccccc;
             border-radius: 5px;
             z-index: 1;
@@ -37,7 +39,7 @@
 <body>
     <div id="help">Help
         <div id="helpText">
-             THE APP MAY STUCK SOMETIMES. IN THIS CASE CLOSE THE APP AND TRY AGAIN IN 1 OR 2 MINUTES 
+            THE APP MAY STUCK SOMETIMES. IN THIS CASE CLOSE THE APP AND TRY AGAIN IN 1 OR 2 MINUTES
             <br>
             
         </div>
@@ -53,7 +55,7 @@
         helpButton.addEventListener("click", function() {
             helpText.style.display = (helpText.style.display === "block") ? "none" : "block";
         });
-    </script
+    </script>
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
