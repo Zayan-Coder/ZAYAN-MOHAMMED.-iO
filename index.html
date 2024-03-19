@@ -6,56 +6,7 @@
   Your browser does not support the audio element.
   </audio>
 
-   <style>
-        /* Style for the help option */
-        #help {
-            position: fixed;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #ffffff;
-            padding: 5px;
-            border: 1px solid #cccccc;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        /* Style for the text box */
-        #helpText {
-            display: none;
-            position: absolute;
-            top: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 200px;
-            padding: 10px;
-            background-color: #ffffff;
-            border: 1px solid #cccccc;
-            border-radius: 5px;
-            z-index: 1;
-        }
-    </style>
-</head>
-<body>
-    <div id="help">Help
-        <div id="helpText">
-            THE APP MAY STUCK SOMETIMES. IN THIS CASE CLOSE THE APP AND TRY AGAIN IN 1 OR 2 MINUTES
-            <br>
-            
-        </div>
-    </div>
-
-    <!-- Your website content goes here -->
-
-    <script>
-        // JavaScript to toggle the visibility of the text box
-        var helpButton = document.getElementById("help");
-        var helpText = document.getElementById("helpText");
-
-        helpButton.addEventListener("click", function() {
-            helpText.style.display = (helpText.style.display === "block") ? "none" : "block";
-        });
-    </script>
+	
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width">
@@ -80,12 +31,10 @@
 		 <ul class="nav-bar"><div class="bg"></div>
 			<li><a class="nav-link active" href="#home">HOME</a></li>
 			<li><a class="nav-link" href="#projects">PROJECTS</a></li>
-			<li><a class="nav-link"
-href="#Games">GAMES</a></li>
-			<li><a class="nav-link"
-href="#Apps">APPS & WEBS</a></li>
-			<li><a class="nav-link"	
- href="#contact">CONTACT</a></li>
+			<li><a class="nav-link"href="#Games">GAMES</a></li>
+			<li><a class="nav-link"href="#Apps">APPS & WEBS</a></li>
+			<li><a class="nav-link"	href="#contact">CONTACT</a></li>
+			 <li><a class="nav-link"href="#h">HELP</a></li>
 		 </ul>
 			
 			<div class="hamburger">
@@ -182,6 +131,10 @@ href="#Apps">APPS & WEBS</a></li>
 		  </div>
 
 	</main>
+	<div id="h">
+         <h3>HELP.<hr></h3>
+	<p>THE APP MAY STUCK SOMETIME IN THIS CASE TRY AGAIN IN 1OR2 MINUTES.</p>
+	
 	  <footer class="copyright">© 2024 
 		  <a href="https://drive.google.com/file/d/1halQ-8b2UCWHm9csZanem1tiSfzZuDRP/view?usp=drivesdk" target="_blank"> ZAYAN.</a>
      </footer>
